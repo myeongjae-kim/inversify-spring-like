@@ -1,5 +1,5 @@
 {
-  "name": "inverisfy-spring-like",
+  "name": "inversify-spring-like",
   "type": "module",
   "version": "0.1.0",
   "description": "TypeSafe ApplicationContext with @Component, @Autowired for inversify.",
