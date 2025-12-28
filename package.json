@@ -48,9 +48,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/myeongjae-kim/inverisfy-spring-like"
+    "url": "https://github.com/myeongjae-kim/inversify-spring-like"
   },
-  "homepage": "https://github.com/myeongjae-kim/inverisfy-spring-like",
+  "homepage": "https://github.com/myeongjae-kim/inversify-spring-like",
   "keywords": [
     "inversify",
     "spring",
