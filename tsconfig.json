@@ -1,5 +1,7 @@
 {
     "compilerOptions": {
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
       "module": "ESNext",
       "declaration": true,
       "target": "ESNext",
@@ -8,5 +10,5 @@
       "outDir": "dist/"
     },
     "include": ["src/"],
-    "exclude": ["tests/", "dist/", "examples/"]
+    "exclude": ["test/", "dist/", "examples/"]
   }
