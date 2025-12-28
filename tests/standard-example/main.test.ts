@@ -14,7 +14,7 @@ describe("Standard Example Test", () => {
     const applicationContext = new ApplicationContext(beanConfig);
 
     for (let i = 0; i < 2; i++) {
-      expect(applicationContext.get("Ninja").katana.damage).toBe(10);
+      expect(applicationContext.getBean("Ninja").katana.damage).toBe(10);
     }
 
     // Check if the bean is created only once.
@@ -27,7 +27,7 @@ describe("Standard Example Test", () => {
 
     const times = 2;
     for (let i = 0; i < times; i++) {
-      expect(applicationContext.get("Ninja").katana.damage).toBe(10);
+      expect(applicationContext.getBean("Ninja").katana.damage).toBe(10);
     }
 
     // Check if the bean is created only once.

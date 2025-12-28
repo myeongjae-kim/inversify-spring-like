@@ -1,7 +1,7 @@
 import { Container, ContainerOptions, inject, Newable } from "inversify";
 
-export const returnTypesafeAutowired = <T extends string>() => ({
-  Autowired: (beanName: T) => inject(beanName)
+export const returnTypesafeAutowired = <BeanName extends string>() => ({
+  Autowired: (beanName: BeanName) => inject(beanName)
 });
 
 export class ApplicationContext<Config extends Record<string, Newable<unknown>>> {
@@ -33,7 +33,12 @@ export class ApplicationContext<Config extends Record<string, Newable<unknown>>>
     });
   }
 
-  public get<T extends keyof Config>(beanName: T): InstanceType<Config[T]> {
+  public getBean<T extends keyof Config>(beanName: T): InstanceType<Config[T]> {
     return this.container.get(beanName as string);
+  }
+
+  // only if you need to use inversify features.
+  public getContainer() {
+    return this.container;
   }
 }
