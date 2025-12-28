@@ -3,3 +3,21 @@
 <p align="center">
   TypeSafe ApplicationContext with <code>@Component</code>, <code>@Autowired</code> for inversify. Inspired by <a href="https://spring.io/" target="_blank">Spring</a>.
 </p>
+
+<p align="center">
+  <a href="https://github.com/myeongjae-kim/inversify-spring-like/actions?query=workflow%3ACI">
+    <img src="https://github.com/myeongjae-kim/inversify-spring-like/workflows/CI/badge.svg" alt="CI" height="18">
+  </a>
+  <a href="https://codecov.io/gh/myeongjae-kim/inversify-spring-like">
+    <img src="https://img.shields.io/codecov/c/github/myeongjae-kim/inversify-spring-like.svg" alt="Test Coverage" height="18">
+  </a>
+  <a href="https://www.npmjs.com/package/inversify-spring-like">
+    <img src="https://img.shields.io/npm/v/inversify-spring-like.svg" alt="npm version" height="18">
+  </a>
+  <a href="https://bundlephobia.com/package/inversify-spring-like">
+    <img src="https://img.shields.io/bundlephobia/minzip/inversify-spring-like" alt="Bundle Size" height="18">
+  </a>
+  <a href="https://raw.githubusercontent.com/myeongjae-kim/inversify-spring-like/main/LICENSE">
+    <img src="https://img.shields.io/npm/l/inversify-spring-like.svg" alt="MIT license" height="18">
+  </a>
+</p>
