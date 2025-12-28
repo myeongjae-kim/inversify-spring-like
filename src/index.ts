@@ -16,8 +16,12 @@ export class ApplicationContext<Config extends Record<string, Newable<unknown>>>
    * const beanConfig = {
    *   userService: UserService,
    * }
-   * // Explicit second parameter when you need to change default options.
+   * 
+   * // normally you do not need an explicit second parameter.
    * const context = new ApplicationContext(beanConfig); 
+   * 
+   * // Explicit second parameter when you need to change default options.
+   * const context = new ApplicationContext(beanConfig, {defaultScope: "Request"}); 
    * ```
    */
   constructor(beanConfig: Config, options?: ContainerOptions) {
