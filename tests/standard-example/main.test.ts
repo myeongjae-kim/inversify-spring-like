@@ -1,3 +1,4 @@
+import { Container } from "inversify";
 import { afterEach, describe, expect, it } from "vitest";
 import { ApplicationContext } from "../../src";
 import { beanConfig } from "./config/BeanConfig";
@@ -33,5 +34,10 @@ describe("Standard Example Test", () => {
     // Check if the bean is created only once.
     expect(KatanaImpl.creationCount).toBe(times);
     expect(NinjaImpl.creationCount).toBe(times);
+  })
+
+  it("should return inversify container", () => {
+    const applicationContext = new ApplicationContext(beanConfig);
+    expect(applicationContext.getContainer() satisfies Container).toBeDefined();
   })
 })
